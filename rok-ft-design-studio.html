@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FactoryTalk Design Studio Demo</title>
+    <style>
+        body {
+            margin: 20px;
+        }
+
+        .content-wrapper {
+            margin: 0 auto;
+            max-width: 640px;
+        }
+
+        .video-container {
+            height: 0;
+            max-width: 100%;
+            height: 100%;
+            overflow: hidden;
+            padding-bottom: 56.25%;
+            position: relative;
+        }
+
+        .video-element {
+            object-fit: fill;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content-wrapper">
+        <h1>FactoryTalk Design Studio Software</h1>
+        <p>Increase System Design Efficiency with FactoryTalk Design Studio</p>
+        <p>Let's <a href="javascript:void(0)" onclick="display(1830)">start demo</a>.
+        <p>
+            <b>Features</b>
+        <ul>
+            <li><a href="javascript:void(0);" onclick="display(1970)">Workbench</a></li>
+            <li>Smart object and inheritance
+                <ul>
+                    <li><a href="javascript:void(0);" onclick="display(2140)">object inheritance (linked hexagon)</a>
+                    </li>
+                    <li><a href="javascript:void(0);" onclick="display(2515)">create new instance</a></li>
+                    <li><a href="javascript:void(0);" onclick="display(2793)">statemachine.logix</a></li>
+                    <li><a href="javascript:void(0);" onclick="display(2801)">intersection.logix</a></li>
+                    <li><a href="javascript:void(0);" onclick="display(2813)">controllerApp.logix</a></li>
+                </ul>
+            </li>
+            <li>Editors</li>
+            <ul>
+                <li>ladder editor: <a href="javascript:void(0);" onclick="display(2158)"> design view</a>, <a
+                        href="javascript:void(0);" onclick="display(2620)">execution view</a></li>
+                <li><a href="javascript:void(0);" onclick="display(2354)">text editor</a></li>
+                <li><a href="javascript:void(0);" onclick="display(2720)">tag editor</a></li>
+            </ul>
+            <li>Tags
+                <ul>
+                    <li><a href="javascript:void(0);" onclick="display(2706)">tags and parameters</a></li>
+                </ul>
+            </li>
+            <li><a href=" javascript:void(0);" onclick="display(2743)">version control</a>
+                <ul>
+                    <li>change history</li>
+                    <li>uncommitted changes</li>
+                    <li>commit changes</li>
+                    <li>push changes</li>
+                </ul>
+            </li>
+            <li>Multi-controller
+                <ul>
+                    <li><a href="javascript:void(0);" onclick="display(2597)">controllers in execution view</a>
+                    </li>
+                    <li><a href="javascript:void(0);" onclick="display(2629)">add new controller</a></li>
+                    <li><a href="javascript:void(0);" onclick="display(2655)">map code to device</a></li>
+                </ul>
+            </li>
+            <li><a href="javascript:void(0);" onclick="display(2905)">Multi-users</a>
+                <ul>
+                    <li>remote changes tips</li>
+                    <li>view remote changes</li>
+                    <li>compare changes between local vs remote, remote commits</li>
+                    <li>pull changes</li>
+                    <li>auto merge: new device, ladder changes</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="video-container">
+        <video controls="" autoplay="" name="media" width="100%" id="mediaElement">
+            <source
+                src="https://rockwellautomation.scene7.com/is/content/rockwellautomation/factorytalk-design-studio-cloud-increase-design-efficiency-en"
+                type="video/mp4">
+        </video>
+    </div>
+</body>
+
+<script type="text/javascript">
+    var mediaElement = document.getElementById('mediaElement');
+    function display(time) {
+        mediaElement.currentTime = time;
+    }
+</script>
+
+</html>
