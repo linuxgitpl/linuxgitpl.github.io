@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FactoryTalk Remote Access Demo</title>
+    <style>
+        body {
+            margin: 20px;
+        }
+
+        .content-wrapper {
+            margin: 0 auto;
+            max-width: 640px;
+        }
+
+        .video-container {
+            height: 0;
+            max-width: 100%;
+            height: 100%;
+            overflow: hidden;
+            padding-bottom: 56.25%;
+            position: relative;
+        }
+
+        .video-element {
+            object-fit: fill;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content-wrapper">
+        <h1>FactoryTalk Remote Access</h1>
+        <p>Extend your reach with FactoryTalk Remote Access: overview, architectures and options</p>
+        <p>Let's <a href="javascript:void(0)" onclick="display('13:50')">start demo</a>.
+        <p>
+            <b>Features</b>
+        <ul>
+            <li>Organization and acess management</li>
+            <ul>
+                <li><a href="javascript:void(0);" onclick="display('14:40')">manage organization</a></li>
+                <li><a href="javascript:void(0);" onclick="display('14:50')">manage resource access</a></li>
+                <li><a href="javascript:void(0);" onclick="display('15:34')">entitlements</a>: manage licenses</li>
+                <li>invite users</li>
+                <ul>
+                    <li><a href="javascript:void(0);" onclick="display('16:00')">send an invitation</a></li>
+                    <li><a href="javascript:void(0);" onclick="display('16:55')">manage invitations</a></li>
+                </ul>
+            </ul>
+            <li>Remote access
+                <ul>
+                    <li>Explorer
+                        <ul>
+                            <li><a href="javascript:void(0);" onclick="display('17:20')">login</a> and
+                                <a href="javascript:void(0);" onclick="display('17:40')">overview</a>
+                            </li>
+                            <li><a href="javascript:void(0);" onclick="display('17:47')">domain view</a>: hierarchy
+                                introduction, like plants, devices, users, groups, and firewalls (<a
+                                    href="javascript:void(0);" onclick="display('34:59')">demo</a>)
+                            </li>
+                            <li><a href="javascript:void(0);" onclick="display('19:45')">devices view</a>: devices and
+                                their
+                                status</li>
+                            <li><a href="javascript:void(0);" onclick="display('19:54')">map view</a>: physical
+                                locations of
+                                devices
+                            </li>
+                            <li><a href="javascript:void(0);" onclick="display('22:12')">firewall settings</a>
+                                (policy/rule): create firewall policy for devices</li>
+                            <li><a href="javascript:void(0);" onclick="display('25:00')">manage permissions</a>: for
+                                resources, like plants, devices, see <a href="javascript:void(0);"
+                                    onclick="display('34:09')">login as contributor</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>Audit
+                        <ul>
+                            <li><a href="javascript:void(0);" onclick="display('20:06')">operations</a>: list of changes
+                                made
+                                in organization</li>
+                            <li><a href="javascript:void(0);" onclick="display('20:35')">connections</a></li>
+                        </ul>
+                    </li>
+                    <li>Tools
+                        <ul>
+                            <li><a href="javascript:void(0);" onclick="display('20:53')">download</a>: software,
+                                firmware, remote access tools links</li>
+                        </ul>
+                    </li>
+                    <li>Connect to device
+                        <ul>
+                            <li><a href="javascript:void(0);" onclick="display('27:15')">steup by step example</a>: by
+                                device access or VPN</li>
+                            <li><a href="javascript:void(0);" onclick="display('30:07')">remote destop</a>: remote
+                                control, processes, explorer, connection, PC information, and log</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        </p>
+    </div>
+    <div class="video-container">
+        <video controls="" autoplay="" name="media" width="100%" id="mediaElement">
+            <source
+                src="https://rockwellautomation.scene7.com/is/content/rockwellautomation/factorytalk-remote-access-overview-architectures-options-en"
+                type="video/mp4">
+        </video>
+    </div>
+</body>
+
+<script type="text/javascript">
+    var mediaElement = document.getElementById('mediaElement');
+    function display(time) {
+        var minutes = parseInt(time.split(":")[0]);
+        var seconds = parseInt(time.split(":")[1]);
+        mediaElement.currentTime = minutes * 60 + seconds;
+    }
+</script>
+
+</html>
