@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FactoryTalk Design Hub Demo</title>
+    <style>
+        body {
+            margin: 20px;
+        }
+
+        .content-wrapper {
+            margin: 0 auto;
+            max-width: 640px;
+        }
+
+        .video-container {
+            height: 0;
+            max-width: 100%;
+            height: 100%;
+            overflow: hidden;
+            padding-bottom: 56.25%;
+            position: relative;
+        }
+
+        .video-element {
+            object-fit: fill;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content-wrapper">
+        <h1>FactoryTalk Design Hub</h1>
+        <p>Teams work better together with actoryTalk Design Hub (<a href="javascript:void(0)"
+                onclick="display('42:27')">Roadmap 2022-2023</a>).</p>
+        <p>Let's <a href="javascript:void(0)" onclick="display('17:50')">start demo</a>.
+        <h2>FactoryTalk Design Hub Features</h2>
+        <ul>
+            <li><a href="javascript:void(0)" onclick="display('18:27')">Home (Apps list)</a>
+                <ul>
+                    <li>Design Hub
+                        <ul>
+                            <li>FactoryTalk Vault</li>
+                            <li>FactoryTalk Design Studio</li>
+                            <li>FactoryTalk Optix</li>
+                            <li>Studio 5000 Logix Designer</li>
+                            <li>Emulate 3D</li>
+                            <li>Arena</li>
+                        </ul>
+                    </li>
+                    <li>Operations Hub
+                        <ul>
+                            <li>FactoryTalk Remote Access</li>
+                            <li>FactoryTalk Edge Gateway</li>
+                            <li>FactoryTalk Edge</li>
+                        </ul>
+                    </li>
+                    <li>Maintenance Hub
+                        <ul>
+                            <li>Fiix</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="javascript:void(0)" onclick="display('19:26')">Notifications</a></li>
+            <li>Management
+                <ul>
+                    <li><a href="javascript:void(0)" onclick="display('19:49')">Access Management</a></li>
+                    <li><a href="javascript:void(0)" onclick="display('20:16')">Invitation Management</a></li>
+                </ul>
+            </li>
+        </ul>
+
+        <h2>FactoryTalk Vault</h2>
+        <ul>
+            <li><a href="javascript:void(0)" onclick="display('20:49')">Introduce FactoryTalk Vault</a></li>
+            <li><a href="javascript:void(0)" onclick="display('20:59')">Object views</a>: card view, table view, hybrid
+                view</li>
+            <li><a href="javascript:void(0)" onclick="display('22:15')">Organization objects</a></li>
+            <li><a href="javascript:void(0)" onclick="display('22:42')">Space using and access management</a></li>
+            <li><b>Factory 82</b>
+                <ul>
+                    <li><a href="javascript:void(0)" onclick="display('25:04')">Brake line</a>: view file versions,
+                        change time</li>
+                    <li><a href="javascript:void(0)" onclick="display('25:44')">MKE Contractor Line</a>: move, delete,
+                        download (select file types), upgrade (single file), analysis (controller/hardware/task
+                        model/program composition/routine/motion/safty/tags/alarms/objects/inter-process communication))
+                    </li>
+                    <li><a href="javascript:void(0)" onclick="display('27:48')">Hardware details</a>: export data in csv
+                    </li>
+                    <li><a href="javascript:void(0)" onclick="display('28:16')">Inter-process communication details</a>:
+                        tags, relationship (consume, provider) visualization
+                    </li>
+                    <li><a href="javascript:void(0)" onclick="display('29:07')">Object definition details</a>: addon
+                        defined type, user defined types, string data types
+                    </li>
+                    <li><a href="javascript:void(0)" onclick="display('30:58')">Select object and open with Logix
+                            Designer (with Remoter)</a>: sync files with vault
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <h2>Simulation</h2>
+        <ul>
+            <li><a href="javascript:void(0)" onclick="display('32:35')">Emulate 3D</a>: view and simulation
+                of demo packaging system</li>
+            <li><a href="javascript:void(0)" onclick="display('34:55')">Introduce Arena</a>: the simulation tool
+        </ul>
+        <h2>Quantified value propositions</h2>
+        <ul>
+            <li><a href="javascript:void(0)" onclick="display('35:54')">Hardware details to MyRA BOM</a>
+                <ul>
+                    <li>FactoryTalk Vault projects provide hardware details (csv file) that can be used within
+                        MyRockwell-BOM: <a href="javascript:void(0)" onclick="display('37:30')">slides</a></li>
+                </ul>
+            </li>
+            <li><a href="javascript:void(0)" onclick="display('38:22')">Productivity gains using project upgrade</a>:
+                time comparison (<a href="javascript:void(0)" onclick="display('39:25')">link</a>)
+            </li>
+            <li><a href="javascript:void(0)" onclick="display('40:40')">Inter-process communication</a>: time comparison
+                (<a href="javascript:void(0)" onclick="display('41:12')">link</a>), inter-process comunication details
+                (<a href="javascript:void(0)" onclick="display('41:56')">link</a>)
+            </li>
+        </ul>
+    </div>
+    <div class="video-container">
+        <video controls="" autoplay="" name="media" width="100%" id="mediaElement">
+            <source
+                src="https://rockwellautomation.scene7.com/is/content/rockwellautomation/factorytalk-design-hub-teams-work-better-together-en"
+                type="video/mp4">
+        </video>
+    </div>
+</body>
+
+<script type="text/javascript">
+    var mediaElement = document.getElementById('mediaElement');
+    function display(time) {
+        var minutes = parseInt(time.split(":")[0]);
+        var seconds = parseInt(time.split(":")[1]);
+        mediaElement.currentTime = minutes * 60 + seconds;
+    }
+</script>
+
+</html>
