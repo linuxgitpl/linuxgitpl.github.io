@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FactoryTalk Optix Visualization Demo</title>
+    <style>
+        body {
+            margin: 20px;
+        }
+
+        .content-wrapper {
+            margin: 0 auto;
+            max-width: 640px;
+        }
+
+        .video-container {
+            height: 0;
+            max-width: 100%;
+            height: 100%;
+            overflow: hidden;
+            padding-bottom: 56.25%;
+            position: relative;
+        }
+
+        .video-element {
+            object-fit: fill;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content-wrapper">
+        <h1>FactoryTalk Optix Visualization</h1>
+        <p>Introduction to FactoryTalk Optix Visualization Platform (<a href="javascript:void(0)"
+                onclick="display('57:00')">features overview</a>)</p>
+        <h2>Boiler Server</h2>
+        <p>This this the demo of Boler Server application.</p>
+        <p>Let's <a href="javascript:void(0)" onclick="display('18:40')">start server demo</a>.
+        <p>
+            <b>Project Structure and Demo</b>
+        <p>You can go <a href="javascript:void(0);" onclick="display('21:00')">step by step</a>, or <a
+                href="javascript:void(0);" onclick="display('34:58')">see results</a>.</p>
+        <ol>
+            <li>prepare: CreateEmptyVersion</li>
+            <li>configure the communication</li>
+            <li>import tags from ethernet</li>
+            <li>import tags from OPC-UA</li>
+            <li>do graphic work with templates</li>
+            <li>link data</li>
+            <li>do simulation: check results and alarms</li>
+        </ol>
+        </p>
+        <p>
+            <b>Features</b>
+        </p>
+        <ul>
+            <li><a href="javascript:void(0);" onclick="display('19:05')">get project from Git repository</a></li>
+            <li><a href="javascript:void(0);" onclick="display('25:35')">Ethernet IP Tag Importer</a>: import online
+                tags and types</li>
+            <li><a href="javascript:void(0);" onclick="display('28:10')">OPC-UA Tag Importer</a>: import online tags and
+                types</li>
+            <li><a href="javascript:void(0);" onclick="display('34:14')">emulator</a>: run on simulator with Optix
+                runtime</li>
+            <li><a href="javascript:void(0);" onclick="display('36:10')">connect database</a>: view logs with tables and
+                charts</li>
+            <li><a href="javascript:void(0);" onclick="display('36:29')">edit controls</a>: edit recipes, track
+                historical data</li>
+        </ul>
+        <p>
+            <b>Optix Demo Projects</b>
+        </p>
+        <ul>
+            <li><a href="javascript:void(0);" onclick="display('19:40')">Features Demo list</a> <b>(not public)</b>
+                <ul>
+                    <li>Optix Features Demo: The old "DemoUniqo" application, full of useful and cool features. This
+                        also includes Codesys project</li>
+                    <li>Optix Features Demo M2M Client: Features Demo OPC/UA Client to Machine-to-Machine capabilities
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        </p>
+
+        <h2>Boiler Client</h2>
+        <p>This this the demo of Boler Client application.</p>
+        <p>You can go <a href="javascript:void(0);" onclick="display('39:32')">step by step</a>, or <a
+                href="javascript:void(0);" onclick="display('42:07')">see results</a>.</p>
+
+        <h2>FactoryTalk Optix Web IDE</h2>
+        <p>This this the demo of Optix Web IDE.</p>
+        <p>Let's <a href="javascript:void(0)" onclick="display('47:15')">start server demo</a>.</p>
+        <p>
+            <b>Features</b>
+        </p>
+        <ul>
+            <li><a href="javascript:void(0);" onclick="display('48:35')">get project from remote Git repository</a></li>
+            <li><a href="javascript:void(0);" onclick="display('49:35')">multi-user collaboration between web and local
+                    IDE with Git</a>: work on the same HMI page</li>
+            <li><a href="javascript:void(0);" onclick="display('51:05')">graphic differences for HMI pages</a></li>
+            <li><a href="javascript:void(0);" onclick="display('54:06')">deploy to a remote online device with
+                    FactoryTalk
+                    Remote (VPN)</a>: deploy, view logs, check deploy results</li>
+        </ul>
+    </div>
+    <div class="video-container">
+        <video controls="" autoplay="" name="media" width="100%" id="mediaElement">
+            <source
+                src="https://rockwellautomation.scene7.com/is/content/rockwellautomation/factorytalk-optix-visualization-platform-introduction-en"
+                type="video/mp4">
+        </video>
+    </div>
+</body>
+
+<script type="text/javascript">
+    var mediaElement = document.getElementById('mediaElement');
+    function display(time) {
+        var minutes = parseInt(time.split(":")[0]);
+        var seconds = parseInt(time.split(":")[1]);
+        mediaElement.currentTime = minutes * 60 + seconds;
+    }
+</script>
+
+</html>
